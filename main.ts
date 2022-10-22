@@ -1,0 +1,12 @@
+radio.setGroup(219)
+basic.forever(function () {
+    pins.analogWritePin(AnalogPin.P0, 0)
+    pins.analogWritePin(AnalogPin.P2, 1023)
+    basic.pause(10000)
+    pins.analogWritePin(AnalogPin.P2, 0)
+    pins.analogWritePin(AnalogPin.P1, 1023)
+    basic.pause(3000)
+    pins.analogWritePin(AnalogPin.P1, 0)
+    pins.analogWritePin(AnalogPin.P0, 1023)
+    basic.pause(18000)
+})
